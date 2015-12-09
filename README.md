@@ -18,12 +18,12 @@ Just view demo.html.
 - HTML
 
 ```html
-  <div class="filpCalendar">
-		<div class="flip-page"><div>page1</div></div>
-		<div class="flip-page"><div>page2</div></div>
-		<div class="flip-page"><div>page3</div></div>
-		<div class="flip-page"><div>page4</div></div>
-	</div> 
+<div class="filpCalendar">
+	<div class="flip-page"><div>page1</div></div>
+	<div class="flip-page"><div>page2</div></div>
+	<div class="flip-page"><div>page3</div></div>
+	<div class="flip-page"><div>page4</div></div>
+</div> 
 ```
 
 - JavaScript
@@ -37,12 +37,12 @@ $('.filpCalendar').filpCalendar();
 - HTML
 
 ```html
-  <div class="filpCalendar">
-		<div class="flip-page"><div>page1</div></div>
-		<div class="flip-page"><div>page2</div></div>
-		<div class="flip-page"><div>page3</div></div>
-		<div class="flip-page"><div>page4</div></div>
-	</div> 
+<div class="filpCalendar">
+	<div class="flip-page"><div>page1</div></div>
+	<div class="flip-page"><div>page2</div></div>
+	<div class="flip-page"><div>page3</div></div>
+	<div class="flip-page"><div>page4</div></div>
+</div> 
 ```
 
 - JavaScript
