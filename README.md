@@ -1,6 +1,7 @@
 # filpCalendar.js
 
-Reveal CSS animation that non-stop flipping a <div> like calendar.
+Reveal CSS animation that non-stop flipping \<div\> like calendar.
+
 You can easily change setting to customise.
 
 # DEMO
