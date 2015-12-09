@@ -2,7 +2,7 @@
  * filpCalendar a jQuery Plug-in
  * Copyright 2015 kakahikari
  * Licensed MIT
- * Date: 2015-12-??
+ * Date: 2015-12-10
  * Version:  1.0.0 
  */
  

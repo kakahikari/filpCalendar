@@ -6,7 +6,9 @@ You can easily change setting to customise.
 
 # DEMO
 
-Just view demo.html.
+[live demo](http://mikan-design.com/filpCalendar/demo.html)
+
+or just view demo.html.
 
 # Version
 
