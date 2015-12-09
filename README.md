@@ -49,13 +49,13 @@ $('.filpCalendar').filpCalendar();
 
 ```javascript
 $('.filpCalendar').filpCalendar({
-	'interval' : 5000,              //  do flip interval
+	'interval' : 5000,           //  do flip interval
 	'animationDuration' : '4s',  //  animation duration
 	'backgroundColor' : '#fff',  //  page's background color
-	'backsideColor' : '#fff',      //  page backside's background color
-	'zIndex' : 5,                    //  flip-page's base zIndex(it will use zIndex+-2)
-	'fullImg' : false,               //  display full <img> page
-	'shadowChange' : true,     //  show shadow change animation
+	'backsideColor' : '#fff',    //  page backside's background color
+	'zIndex' : 5,                //  flip-page's base zIndex(it will use zIndex+-2)
+	'fullImg' : false,           //  display full <img> page
+	'shadowChange' : true,       //  show shadow change animation
 });
 ```
 # Developer
