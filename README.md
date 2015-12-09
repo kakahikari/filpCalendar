@@ -19,6 +19,10 @@ Just view demo.html.
 - HTML
 
 ```html
+<head>
+	<link rel="stylesheet" href="css/flipdiv.css">
+<head>
+<script src="filpCalendar.js"></script>
 <div class="filpCalendar">
 	<div class="flip-page"><div>page1</div></div>
 	<div class="flip-page"><div>page2</div></div>
@@ -38,6 +42,10 @@ $('.filpCalendar').filpCalendar();
 - HTML
 
 ```html
+<head>
+	<link rel="stylesheet" href="css/flipdiv.css">
+<head>
+<script src="filpCalendar.js"></script>
 <div class="filpCalendar">
 	<div class="flip-page"><div>page1</div></div>
 	<div class="flip-page"><div>page2</div></div>
