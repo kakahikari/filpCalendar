@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/flipdiv.css">
+	<style>	
+	.continer{margin:20px;width:300px;height:300px;border:0;box-sizing:border-box;}
+	.continer2{margin:20px;width:300px;height:169px;border:0;box-sizing:border-box;}
+	.continer3{margin:20px;width:400px;height:400px;border:0;box-sizing:border-box;}
+	</style>
+	<script src="lib/jquery-2.1.4.min.js"></script>	
+	<script>
+		$(function () {
+			$("#filp1").filpCalendar();
+			$('#filp2').filpCalendar({
+				'fullImg' : true,
+				'interval' : 500,
+				'animationDuration' : '0.5s'
+			});
+			$("#filp3").filpCalendar({
+				'backgroundColor' : '#777',
+				'backsideColor' : '#000'
+			});
+		});
+	</script>
+</head>
+<body>
+	just use it
+	<div class="continer">
+		<div id="filp1" class="filpCalendar">
+			<div class="flip-page"><div>page1</div></div>
+			<div class="flip-page"><div>page2</div></div>
+			<div class="flip-page"><div>page3</div></div>
+			<div class="flip-page"><div>page4</div></div>
+		</div>
+	</div>
+	<br>
+	fullImg demo<br>
+	<div class="continer2">
+		<div id="filp2" class="filpCalendar">
+			<div class="flip-page"><div><img src="img/20151209_221844_001.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_002.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_003.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_004.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_005.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_006.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_007.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_008.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_009.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_010.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_011.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_012.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_013.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_014.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_015.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_016.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_017.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_018.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_019.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_020.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_021.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_022.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_023.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_024.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_025.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_026.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_027.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_028.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_029.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/20151209_221844_030.jpg"></div></div>
+		</div>
+	</div>
+	<br>
+	backgroundColor & backsideColor demo
+	<div class="continer3">
+		<div id="filp3" class="filpCalendar">
+			<div class="flip-page"><div><img src="img/f3_01.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_02.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_03.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_04.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_05.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_06.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_07.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_08.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_09.jpg"></div></div>
+			<div class="flip-page"><div><img src="img/f3_10.jpg"></div></div>
+		</div>
+	</div>	
+	<script src="filpCalendar.js"></script> 
+</body>
+</html>

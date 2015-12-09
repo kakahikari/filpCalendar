@@ -1,0 +1,187 @@
+/*filpCalendar with clearfix*/
+.filpCalendar {
+	*zoom: 1;
+    width: 100%;	
+	height: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	box-shadow: 3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.filpCalendar:before,
+.filpCalendar:after {
+	display: table;
+    line-height: 0;
+    content: "";
+}
+.filpCalendar:after {
+    clear: both;
+}
+/* page frame */
+.filpCalendar .flip-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;    
+}
+.filpCalendar .flip-page.active {
+    -moz-animation: filpping 3s linear 1;
+    -o-animation: filpping 3s linear 1;
+    -webkit-animation: filpping 3s linear 1;
+    animation: filpping 3s linear 1;
+    z-index: 7;	
+}
+/* page content */
+.filpCalendar .flip-page div {
+	margin: 0 auto;
+	border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
+	overflow: hidden;
+}
+/* option fullImg*/
+.filpCalendar .flip-page.fullImg div img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* shadow change animation */
+.filpCalendar .flip-page .shadowChange {
+    -moz-animation: filppingDiv 3s linear 1;
+    -o-animation: filppingDiv 3s linear 1;
+    -webkit-animation: filppingDiv 3s linear 1;
+    animation: filppingDiv 3s linear 1;
+}
+/* keyframes*/
+@-webkit-keyframes filppingHide{
+	0% {
+        visibility:visible;
+	}
+	74%{
+        visibility:hidden;
+	}
+	100% {
+		visibility:hidden;
+	}
+}
+
+@keyframes filppingHide{
+	0% {
+        visibility:visible;
+	}
+	74%{
+        visibility:hidden;
+	}
+	100% {
+		visibility:hidden;
+	}
+}
+@-webkit-keyframes filppingDiv{
+	0% {
+		box-shadow:3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+	35%{
+		box-shadow:3px -3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+	74%{
+		box-shadow:0 0 0 2px #aaa;
+	}
+	75%{
+		box-shadow:3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+	100% {
+		box-shadow:3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+}
+@keyframes filppingDiv{
+	0% {
+		box-shadow:3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+	35%{
+		box-shadow:3px -3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+	74%{
+		box-shadow:0 0 0 2px #aaa;
+	}
+	75%{
+		box-shadow:3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+	100% {
+		box-shadow:3px 3px 4px 1px #bbb,0 0 2px #aaa;
+	}
+}
+/* keyframes in filpCalendar.js*/
+/* @-webkit-keyframes filpping{
+    0% {
+        -webkit-transform: rotateX(0deg) skewX(0deg);
+        z-index: 4;
+    }
+    60% {
+        -webkit-transform: rotateX(180deg) skewX(15deg);
+        z-index: 4;
+    }
+    74% {
+        -webkit-transform: rotateX(90deg) skewX(-45deg);
+        z-index: 7;
+    }
+    75% {
+        -webkit-transform: rotateX(90deg) skewX(-45deg);
+        z-index: 7;
+    }
+    100% {
+        -webkit-transform: rotateX(0) skewX(0);
+        z-index: 7;
+    }
+}
+@keyframes filpping{
+	0% {
+		transform: rotateX(0deg) skewX(0deg);
+        z-index: 4;
+	}
+	60%{
+		transform: rotateX(180deg) skewX(15deg);
+        z-index: 4;
+	}
+	74%{
+		transform: rotateX(90deg) skewX(-45deg);
+        z-index: 7;
+	}
+	75%{
+		transform: rotateX(90deg) skewX(-45deg);
+        z-index: 7;
+	}
+	100% {
+		transform: rotateX(0) skewX(0);
+        z-index: 7;
+	}
+} */
+/* page backside in filpCalendar.js*/
+/* .filpCalendar .flip-page.active::after {
+	background: #fff;
+    content: "";    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    -moz-animation: filppingHide 3s linear 1;
+    -o-animation: filppingHide 3s linear 1;
+    -webkit-animation: filppingHide 3s linear 1;
+    animation: filppingHide 3s linear 1;
+} */

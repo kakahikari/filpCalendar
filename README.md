@@ -67,6 +67,11 @@ $('.filpCalendar').filpCalendar({
 	'shadowChange' : true,       //  show shadow change animation
 });
 ```
+
+# Bugs
+
+- Too many page make some backside broken.
+
 # Developer
 
 kakahikari, who live in Taiwan.
